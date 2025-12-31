@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Brand Store | Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== Sidebar ===== -->
+<aside class="sidebar" id="sidebar">
+  <div class="logo">
+    <h2>Brand Store</h2>
+    <span>Admin Panel</span>
+  </div>
+
+  <ul class="menu">
+    <li onclick="loadPage('dashboard')"><i class="fa fa-chart-line"></i> الأداء</li>
+    <li onclick="loadPage('inventory')"><i class="fa fa-box"></i> المخزون</li>
+    <li onclick="loadPage('orders')"><i class="fa fa-cart-shopping"></i> الطلبات</li>
+    <li onclick="loadPage('shipments')"><i class="fa fa-truck"></i> الشحنات</li>
+    <li onclick="loadPage('notifications')"><i class="fa fa-bell"></i> الإشعارات</li>
+    <li onclick="loadPage('settings')"><i class="fa fa-gear"></i> الإعدادات</li>
+    <li class="logout" onclick="logout()"><i class="fa fa-right-from-bracket"></i> تسجيل الخروج</li>
+  </ul>
+</aside>
+
+<!-- ===== Main Content ===== -->
+<main class="main">
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <button class="toggle-btn" onclick="toggleSidebar()">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="admin-profile">
+      <img src="https://via.placeholder.com/40" alt="Admin">
+      <span class="admin-name">أدمن النظام</span>
+      <span class="admin-badge">ADMIN</span>
+    </div>
+  </header>
+
+  <!-- Dynamic Content -->
+  <section class="content" id="content">
+    <h1>👋 مرحباً بك في لوحة تحكم Brand Store</h1>
+    <p>اختر قسم من القائمة الجانبية لبدء الإدارة.</p>
+  </section>
+
+</main>
+
+<!-- JS -->
+<script src="js/app.js"></script>
+</body>
+</html>
